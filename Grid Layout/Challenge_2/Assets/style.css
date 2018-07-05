@@ -1,0 +1,67 @@
+body{
+text-align: center;
+}
+
+/*Effects every aspect of the page*/
+
+
+/*Everything to do with the side bar*/
+ .sidebar-wrapper {
+  background:#1B1B1B;
+  position: absolute;
+  left: 0;
+  width: 25%;
+  height: 155%;
+  min-height: 800px;
+  margin-top: -20px;
+}
+
+.image{
+  width:240px;
+  height:240px;
+  border:1px solid white;
+  border-radius: 50%;
+  margin-left: 17%;
+  margin-top: 9%;
+}
+
+.group{
+  border: 2px solid white;
+  text-align: center;
+
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  line-height:35px;
+}
+
+/*Text under image*/
+.text{
+  font-size:25px;
+  text-align: center
+}
+.decrib{
+ font-size:15px;
+ text-align: center;
+}
+.color{
+  color: white;
+}
+/*main content for the rest of the page*/
+.img1{
+  height: 200px;
+  width: 200px;
+  margin-left:20%;
+}
+.img2{
+    height: 200px;
+    width: 200px;
+    margin-right:-60%
+}
+.img3{
+  height: 200px;
+  width: 200px;
+  margin-right:-80%
+}

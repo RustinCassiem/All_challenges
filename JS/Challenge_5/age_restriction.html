@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+  .container{
+    display:block;
+    background-color: silver;
+    width: 200px;
+    height: 150px;
+    margin-left: 30%;
+    margin-top: 10%;
+
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Enter your age</p>
+    <input id="check" type="number" min="16" max="100" required>
+    <button onclick="myFunction()">Enter</button>
+    <p id="age"></p>
+  </div>
+  <script>
+  function myFunction() {
+    var inpObj = document.getElementById("check");
+    if (!inpObj.checkValidity()) {
+      document.getElementById("age").innerHTML = "You are not allowed in this area please leave";
+      alert("No!");
+    } else {
+      document.getElementById("age").innerHTML = "Appears to be valid";
+      alert("Welcome");
+    }
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript</title>
+</head>
+<body>
+  <div class="container">
+    <div id="red" >Red</div>
+    <div id="orange" >orange</div>
+    <div id="yellow" >yellow</div>
+    <div id="green" >green</div>
+    <div id="blue" >blue</div>
+    <div id="indigo" >indigo</div>
+    <div id="violet" >violet</div>
+  </div>
+
+<script type="text/javascript">
+var rainbow = ["red","orange","yellow","green","blue","indigo","violet"];
+// console.log(rainbow);
+// console.log(rainbow [2]);
+for (var i=0 ; i <rainbow.length;i++){
+  var color = document.getElementById(rainbow[i]+"");
+  color.style.backgroundColor = rainbow[i];
+}
+</script>
+</body>
+</html>

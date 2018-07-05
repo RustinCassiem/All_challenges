@@ -1,0 +1,28 @@
+// ----
+// Sass (v3.4.25)
+// Compass (v1.0.3)
+// ----
+
+@mixin body{
+  background-color:GOLD;
+  color:#ccc;
+  width:500px;
+
+}
+/*adding color and making everything centre*/
+
+ body{
+   @include body;
+}
+
+.table {
+  display: block;
+  height: 100px;
+  width: 100px;
+  color:white;
+}
+
+button{
+  margin-left:0%;
+  margin-top: 10%;
+}

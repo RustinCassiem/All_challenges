@@ -1,0 +1,62 @@
+body{
+background-color:#696047;
+}
+
+/*Ribbons property*/
+.ribbon {
+position: relative;
+width: 600px;
+height: 350px;
+left: 470px;
+bottom: -150px;
+padding: 10px;
+border-radius: 20px;
+background: #0090C1;
+}
+div {
+text-align: center;
+font-size: 33px;
+font-family: 'Lora', serif;
+overflow: hidden;
+}
+.b {
+width: 220px;
+height: 50px;
+background-color: #F6F4F3;
+transform: rotate(45deg);
+bottom:220px;
+margin-left: 440px;
+}
+a{
+text-decoration: none;
+color: #BB0A21;
+position: absolute;
+margin-top: 5px;
+margin-left: -20px;
+}
+img{
+width:150px;
+height:150px;
+}
+.c{
+margin-left: -470px;
+margin-top: -69px;
+padding: 5px;
+border-radius: 20px;
+}
+.d{
+margin-left: -20px;
+margin-top: -50px;
+font-size:17px;
+}
+.e{
+margin-left: 190px;
+margin-top:  -280px;
+font-size:15px;
+}
+
+footer{
+margin-top:22%;
+font-size:28px;
+color:white;
+}

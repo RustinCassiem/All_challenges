@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .countdownContainer{
+      position: absolute;
+      top: 30%;
+      left: 30%;
+
+      text-align: center;
+      background-color: #ddd;
+      border:1px solid #999;
+      box-shadow: 0 0 5px 3px #ccc;
+      }
+    </style>
+
+  </head>
+  <body>
+     <table class="countdownContainer">
+       <tr>
+         <td colspan="4">Rustin Cassiem Birthday Countdown</td>
+       </tr>
+       <tr>
+         <td id="days">120</td>
+         <td id="hours">4</td>
+         <td id="minutes">12</td>
+         <td id="seconds">22</td>
+       </tr>
+       <tr>
+         <td>Days</td>
+         <td>Hours</td>
+         <td>Minutes</td>
+         <td>Seconds</td>
+       </tr>
+     </table>
+     <script type="text/javascript">
+       function countdown(){
+         var now = new Date();
+         var evenDate = new Date("2018 , 11 ,25");
+
+         var currentTime = now.getTime();
+         var evenTime = evenDate.getTime();
+
+         var remtime = evenDate - currentTime;
+
+         var s = Math.floor(remtime / 1000);
+         var m = Math.floor(s / 60);
+         var h = Math.floor(m / 60);
+         var d = Math.floor(h / 24);
+
+         h %= 24;
+         m %= 60;
+         s %= 60;
+         h =(h < 10 ) ? "0" + h : h;
+         m =(m < 10 ) ? "0" + m : m;
+         s =(s < 10 ) ? "0" + s : s;
+         //days
+         document.getElementById("days").textContent = d;
+         document.getElementById("days").innerHTML = d;
+
+         //Hours
+         document.getElementById("hours").textContent = h;
+
+         //Seconds
+         document.getElementById("seconds").textContent = s;
+
+         setTimeout(countdown, 1000);
+         }
+         countdown();
+     </script>
+  </body>
+</html>

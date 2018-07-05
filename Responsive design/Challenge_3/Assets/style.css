@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+}
+
+H1{
+  margin-top: 0%;
+  text-align: center;
+  color:red;
+  font-size:90px
+}
+
+#size{
+  height:325px;
+  width: 325px
+}
+
+img{
+  margin-left: 5%;
+}

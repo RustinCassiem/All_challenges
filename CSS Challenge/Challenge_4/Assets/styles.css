@@ -1,0 +1,57 @@
+.container{
+	height: 200px;
+	width: 200px;
+}
+
+selector:pseudo-class {
+	 property:value;
+}
+ body{background-color:#FEFCFF ;
+ }
+
+
+ /*Box 2 and effects */
+ .a{background-color:silver;
+	 float:left;
+	}
+	.a:hover{
+		background-color: pink;
+}
+.a:active{background-color:white;
+}
+
+ /*Box 2 and effects */
+ .d{background-color:#FF7518;
+	 float:left;
+	}
+	.d:hover{
+		background-color: #35A7FF;
+}
+.d:active{background-color:#DC465A;
+}
+
+/*Box 3 and effects */
+.b{background-color: blue;
+	float: right;
+}
+ .b:hover{
+  background-color: gold;
+ }
+ .b:active{background-color:cyan;
+ }
+ .b:hover{
+	 width:60px;
+ }
+
+ /*Box 4 and effects */
+ .c{background-color: #820b8a;
+ 	float: right;
+  }
+.c:hover{
+	 background-color: #0D0630;
+	}
+.c:active{background-color: #E0115F ;
+	}
+.c:hover{
+	width:600px;
+}

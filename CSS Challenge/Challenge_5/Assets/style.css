@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/* Using a url */
+
+/*adding custom font to paragraph 1*/
+.para1{font-family: 'Questrial', sans-serif;
+       text-align: center;
+}
+
+/*adding custom font to paragraph 2*/
+.para2{font-family: 'Lobster', cursive;
+       text-align: center;
+}
+
+body{
+	background-color:#3F88C5
+}

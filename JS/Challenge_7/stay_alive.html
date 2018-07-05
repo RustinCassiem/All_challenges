@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<div><span id="time">00:15</span></div>
+
+<body>
+
+
+
+ <script type="text/javascript">
+
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < -1) {
+            timer = duration;
+            alert("Keep it going")
+         
+        }
+    }, 1000);
+}
+  
+
+window.onload = function () {
+    var seconds = 1 * 15,
+        display = document.querySelector('#time');
+    startTimer(seconds, display);
+};
+
+
+
+ </script>
+</body>
+</html>

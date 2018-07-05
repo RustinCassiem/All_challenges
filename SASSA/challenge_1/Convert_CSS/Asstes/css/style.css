@@ -1,0 +1,18 @@
+/*adding color and making everything centre*/
+body {
+  background-color: GOLD;
+  color: #ccc;
+  width: 500px;
+}
+
+.table {
+  display: block;
+  height: 100px;
+  width: 100px;
+  color: white;
+}
+
+button {
+  margin-left: 0%;
+  margin-top: 10%;
+}
