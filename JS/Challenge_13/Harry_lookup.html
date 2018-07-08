@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harry Lookup</title>
+</head>
+<body>
+    <script>
+    var characters = [
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "likes": ["Hogwarts", "Magic", "Hagrid"],
+        "dislikes": ["Voldemort", "Moaning Myrtle", "Dementors"],
+    },
+    {
+        "firstName": "Ron",
+        "lastName": "Weasley",
+        "likes": ["Dueling", "Quidditch Keeper", "Wizard's Chess"],
+        "dislikes": ["Spiders", "Pranks", "Studing"],
+    },
+    {
+        "firstName": "Hermione",
+        "lastName": "Granger",
+        "likes": ["Reading", "Potions", "Studying "],
+        "dislikes": ["Snape","Scampers", "monsters"],
+    },
+
+];
+
+    document.getElementById("submit").addEventListener('click', lookUp);
+
+function lookUp(firstName, prop){
+    firstName = document.getElementById('first_name').value;
+    prop = document.getElementById("user_select").value;
+    var found = characters.find((found) => found[characters.firstName]);
+    if (found) {
+        alert();
+        // console.log(found);
+    }
+}
+    
+    </script>
+</body>
+</html>
